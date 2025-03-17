@@ -70,7 +70,7 @@ while True:
         read_file()
 
     elif user_command == "exit":  # Exit the program
-        print("Goodbye!")
+        print("Goodbye")
         time.sleep(1)  # Add a slight delay before exit
         break  # Break out of the loop to exit the program
 
