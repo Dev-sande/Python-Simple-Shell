@@ -3,12 +3,12 @@
 import os
 import time
 
-# Function to get user input for a command
+# function to get user input for a command
 def get_command():
     command = input("Input>> ")
     return command
 
-# Function to list files in the current directory
+# function to list files in the current directory
 def list_file():
     files = os.listdir('.')
     if files:
@@ -18,17 +18,17 @@ def list_file():
     else:
         print("No files found in the current directory.")
 
-# Function to clear the terminal screen
+# function to clear the terminal screen
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
     print("Screen cleared.")
 
-# Function to print the current working directory
+# function to print the current working directory
 def print_pwd():
     current_directory = os.getcwd()
     print(f"Current Directory: {current_directory}")
 
-# Function to create a new file with some content
+# function to create a new file with some content
 def create_file():
     filename = input("Enter the filename to create: ")
     try:
@@ -38,7 +38,7 @@ def create_file():
     except Exception as e:
         print(f"Error creating file: {e}")  # Handle any errors that may occur during file creation
 
-# Function to read a file's contents
+# function to read a file's contents
 def read_file():
     filename = input("Enter the filename to read: ")
     try:
@@ -50,7 +50,7 @@ def read_file():
     except Exception as e:
         print(f"Error reading file: {e}")  # Handle other errors
 
-# Main loop
+# main loop
 while True:
     user_command = get_command()  # Get user command
 
